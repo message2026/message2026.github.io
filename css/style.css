@@ -1,0 +1,58 @@
+/* 页脚透明 */
+
+#footer {
+  background: transparent !important;
+}
+
+/* 白天模式遮罩透明 */
+#footer::before {
+  background: transparent !important;
+}
+
+/* 夜间模式遮罩透明 */
+[data-theme="dark"] #footer::before {
+  background: transparent !important;
+}
+
+/* 分类美化 */
+.category-lists .category-list .category-list-count:after {
+    content: ' )';
+}
+
+.category-lists .category-list .category-list-count:before {
+    content: '( ';
+}
+
+/* 头像不旋转 */
+.avatar-img img:hover {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    user-drag: none; /* 禁止图片拖动 */
+    -webkit-user-drag: none; /* Safari 浏览器支持 */
+}
+
+
+.avatar-img img {
+    -webkit-transition: filter 375ms ease-in 0.2s, -webkit-transform 0s;
+    -moz-transition: filter 375ms ease-in 0.2s, -moz-transform 0s;
+    -o-transition: filter 375ms ease-in 0.2s, -o-transform 0s;
+    -ms-transition: filter 375ms ease-in 0.2s, -ms-transform 0s;
+    transition: filter 375ms ease-in 0.2s, transform 0s;
+    -webkit-user-drag: none; /* 禁止 Safari 中的拖动 */
+    user-drag: none; /* 禁止拖动 */    
+
+}
+
+.container code {
+    padding: 2px 5px;
+    background: rgba(27,31,35,.05);
+    color: #0a84ed;
+}
+
+#page-header {
+    background-color: rgba(0, 0, 0, 0);
+	background-image: url(/images/bg.webp);
+}
